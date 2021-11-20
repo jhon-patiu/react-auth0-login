@@ -5,10 +5,12 @@ const Profile = () => {
     const { user, isAuthenticated } = useAuth0();
     return (
         isAuthenticated && (
-            <div>
+            <div className="profile">
                 <img src={user.picture} />
+                <br />
                 <h2>{user.name}</h2>
-                <p>Hello world</p>
+                <br />
+                <h3>Login Succesful!</h3>
             </div>
         )
     );
